@@ -20,10 +20,14 @@
         <activity android:name=".PhotoGalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".PhotoPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
         <service android:name=".PollService" />
 
         <receiver android:name=".StartupReceiver">
@@ -39,5 +43,4 @@
             </intent-filter>
         </receiver>
     </application>
-
 </manifest>
